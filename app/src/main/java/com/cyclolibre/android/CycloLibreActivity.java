@@ -10,8 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.webkit.*;
 
 public class CycloLibreActivity extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
@@ -90,7 +88,7 @@ public class CycloLibreActivity extends AppCompatActivity implements ActivityCom
             }
         });
 
-        webview.loadUrl("https://cyclolibre.herokuapp.com/");
+        webview.loadUrl(BuildConfig.CYCLOLIBRE_URL);
         setContentView(webview);
     }
 }
